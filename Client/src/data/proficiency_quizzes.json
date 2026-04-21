@@ -1,0 +1,34 @@
+{
+  "UI/UX": [
+    {
+      "question": "What is the primary purpose of a user persona in UX design?",
+      "options": [
+        "To define final brand colors",
+        "To represent target users and goals",
+        "To replace user testing",
+        "To write backend APIs"
+      ],
+      "answer": "To represent target users and goals"
+    },
+    {
+      "question": "Which method helps validate a navigation flow quickly?",
+      "options": [
+        "A/B testing color palettes only",
+        "Card sorting and tree testing",
+        "Increasing font size",
+        "Adding more animations"
+      ],
+      "answer": "Card sorting and tree testing"
+    },
+    {
+      "question": "What does a high-fidelity prototype usually include?",
+      "options": [
+        "Only rough hand sketches",
+        "Interactive screens close to final UI",
+        "Database schema",
+        "Server logs"
+      ],
+      "answer": "Interactive screens close to final UI"
+    }
+  ]
+}

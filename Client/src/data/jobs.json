@@ -1,0 +1,123 @@
+{
+  "starterResume": "Experienced professional with a background in web development. I have been building user interfaces using HTML, CSS, and JavaScript for 3 years. Recently, I started working with React and TypeScript to build scalable single-page applications. I also have some basic familiarity with Figma for translating designs into code.",
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Data Analyst",
+      "company": "TechCorp",
+      "location": "Remote",
+      "requiredSkills": ["Python", "SQL", "Excel", "Data Visualization"],
+      "youtubeLink": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+    },
+    {
+      "id": 2,
+      "title": "Frontend Developer",
+      "company": "WebFlow",
+      "location": "New York, NY",
+      "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
+      "youtubeLink": "https://www.youtube.com/watch?v=Ke90Tje7VS0"
+    },
+    {
+      "id": 3,
+      "title": "Backend Engineer",
+      "company": "ServerSys",
+      "location": "Remote",
+      "requiredSkills": ["Node.js", "AWS", "SQL", "Docker", "System Design"],
+      "youtubeLink": "https://www.youtube.com/watch?v=Oe421EPjeBE"
+    },
+    {
+      "id": 4,
+      "title": "UI/UX Designer",
+      "company": "CreativeApp",
+      "location": "San Francisco, CA",
+      "requiredSkills": ["Figma", "UI/UX", "HTML", "CSS"],
+      "youtubeLink": "https://www.youtube.com/watch?v=c9Wg6Cb_YlU"
+    },
+    {
+      "id": 5,
+      "title": "Machine Learning Engineer",
+      "company": "AI Labs",
+      "location": "Boston, MA",
+      "requiredSkills": ["Python", "Machine Learning", "SQL", "AWS", "Docker"],
+      "youtubeLink": "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
+    },
+    {
+      "id": 6,
+      "title": "Java Developer",
+      "company": "Enterprise Inc",
+      "location": "Chicago, IL",
+      "requiredSkills": ["Java", "Spring Boot", "SQL", "Agile"],
+      "youtubeLink": "https://www.youtube.com/watch?v=grEKMHGYyns"
+    },
+    {
+      "id": 7,
+      "title": "Full Stack Developer",
+      "company": "StartupX",
+      "location": "Remote",
+      "requiredSkills": ["React", "Node.js", "TypeScript", "SQL", "AWS"],
+      "youtubeLink": "https://www.youtube.com/watch?v=nu_pCVPKzTk"
+    },
+    {
+      "id": 8,
+      "title": "Product Manager",
+      "company": "Innovate Co",
+      "location": "Austin, TX",
+      "requiredSkills": ["Agile", "Excel", "Data Visualization", "UI/UX"],
+      "youtubeLink": "https://www.youtube.com/watch?v=502ILHjX9EE"
+    },
+    {
+      "id": 9,
+      "title": "C++ Systems Engineer",
+      "company": "HardwareNet",
+      "location": "Seattle, WA",
+      "requiredSkills": ["C++", "System Design", "Agile"],
+      "youtubeLink": "https://www.youtube.com/watch?v=vLnPwxZdW4Y"
+    },
+    {
+      "id": 10,
+      "title": "Data Scientist",
+      "company": "DataWorks",
+      "location": "Remote",
+      "requiredSkills": ["Python", "SQL", "Machine Learning", "Data Visualization"],
+      "youtubeLink": "https://www.youtube.com/watch?v=ua-CiDNNj30"
+    },
+    {
+      "id": 11,
+      "title": "Cloud Architect",
+      "company": "CloudNet",
+      "location": "Denver, CO",
+      "requiredSkills": ["AWS", "Docker", "System Design", "Python"],
+      "youtubeLink": "https://www.youtube.com/watch?v=SOTamWNgDKc"
+    },
+    {
+      "id": 12,
+      "title": "Web Designer",
+      "company": "Studio Z",
+      "location": "Remote",
+      "requiredSkills": ["Figma", "UI/UX", "React", "CSS"],
+      "youtubeLink": "https://www.youtube.com/watch?v=FTFaQWZBqQ8"
+    }
+  ],
+  "learningResources": {
+    "Python": { "title": "Python for Everybody", "youtube": "https://www.youtube.com/watch?v=8DvywoWv6fI" },
+    "SQL": { "title": "SQL Tutorial for Beginners", "youtube": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+    "Excel": { "title": "Excel Crash Course", "youtube": "https://www.youtube.com/watch?v=Vl0H-qTclOg" },
+    "Data Visualization": { "title": "Data Visualization Basics", "youtube": "https://www.youtube.com/watch?v=5Zg-C8AAIGg" },
+    "React": { "title": "React Full Course", "youtube": "https://www.youtube.com/watch?v=bMknfKXIFA8" },
+    "Node.js": { "title": "Node.js Crash Course", "youtube": "https://www.youtube.com/watch?v=32M1al-Y6Ag" },
+    "TypeScript": { "title": "TypeScript Course", "youtube": "https://www.youtube.com/watch?v=30LWjhZzg50" },
+    "AWS": { "title": "AWS for Beginners", "youtube": "https://www.youtube.com/watch?v=ulprqHHWlng" },
+    "Docker": { "title": "Docker in 100 Seconds", "youtube": "https://www.youtube.com/watch?v=Gjnup-PuquQ" },
+    "Machine Learning": { "title": "Machine Learning Basics", "youtube": "https://www.youtube.com/watch?v=ukzFI9rgwfU" },
+    "Figma": { "title": "Figma UI Design Tutorial", "youtube": "https://www.youtube.com/watch?v=FTFaQWZBqQ8" },
+    "UI/UX": { "title": "UX Design for Beginners", "youtube": "https://www.youtube.com/watch?v=Ovj4hFxko7c" },
+    "Agile": { "title": "Agile Fundamentals", "youtube": "https://www.youtube.com/watch?v=Z9QbYZh1YXY" },
+    "Java": { "title": "Java Programming Tutorial", "youtube": "https://www.youtube.com/watch?v=eIrMbAQSU34" },
+    "Spring Boot": { "title": "Spring Boot Quick Start", "youtube": "https://www.youtube.com/watch?v=vtPkZShrvXQ" },
+    "C++": { "title": "C++ Full Course", "youtube": "https://www.youtube.com/watch?v=8jLOx1hD3_o" },
+    "System Design": { "title": "System Design Basics", "youtube": "https://www.youtube.com/watch?v=UzLMhqg3_Wc" },
+    "HTML": { "title": "HTML Full Course", "youtube": "https://www.youtube.com/watch?v=kUMe1FH4CHE" },
+    "CSS": { "title": "CSS Course", "youtube": "https://www.youtube.com/watch?v=OXGznpKZ_sA" },
+    "JavaScript": { "title": "JavaScript Crash Course", "youtube": "https://www.youtube.com/watch?v=hdI2bqOjy3c" }
+  }
+}
