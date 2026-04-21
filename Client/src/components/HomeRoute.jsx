@@ -48,28 +48,31 @@ export default function HomeRoute({
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: 'linear-gradient(180deg, #eef0f1 0%, #e7eaec 52%, #c7d8dd 78%, #8caeb7 100%)',
+          background: 'linear-gradient(180deg, #f3f5f6 0%, #e8ecef 48%, #c8dbe1 78%, #81a9b2 100%)',
         }}
       />
+      <div className="pointer-events-none absolute -right-24 top-8 h-64 w-64 rounded-full bg-teal-300/25 blur-3xl" />
+      <div className="pointer-events-none absolute -left-16 bottom-10 h-56 w-56 rounded-full bg-cyan-200/35 blur-3xl" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#6f9ca8]/45 via-[#8eb5be]/20 to-transparent" />
 
       <div className="relative z-10 w-full max-w-3xl space-y-1 text-center">
-        <p className="text-2xl font-medium tracking-wide">let's find the place</p>
-        <p className="text-8xl font-black leading-none tracking-tighter md:text-9xl">CLICK!</p>
-        <p className="text-2xl font-medium tracking-wide">where you actually</p>
+        <p className="text-2xl font-medium tracking-wide text-[#204f59]">let's find the place</p>
+        <p className="bg-gradient-to-b from-[#2e6e77] to-[#255c66] bg-clip-text text-8xl font-black leading-none tracking-tighter text-transparent drop-shadow-[0_5px_18px_rgba(27,88,97,0.28)] md:text-9xl">CLICK!</p>
+        <p className="text-2xl font-medium tracking-wide text-[#204f59]">where you actually</p>
 
-        <div className="relative mx-auto mt-12 flex w-full max-w-3xl items-center gap-2 rounded-[2rem] border border-[#1f5d63]/20 bg-white px-3 py-3 shadow-2xl shadow-[#1f5d63]/10">
+        <div className="relative mx-auto mt-12 flex w-full max-w-3xl items-center gap-2 rounded-[2rem] border border-white/60 bg-white/85 px-3 py-3 shadow-[0_22px_55px_rgba(31,93,99,0.16)] backdrop-blur-md">
           <div className="relative" ref={uploadMenuRef}>
             <button
               type="button"
               onClick={onToggleUpload}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#1f5d63]/15 bg-[#f6fafb] text-[#1f5d63] transition hover:bg-[#eaf4f6]"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#1f5d63]/15 bg-[#f6fafb] text-[#1f5d63] transition hover:scale-105 hover:bg-[#eaf4f6]"
               aria-label="Upload local PDF"
             >
               <Paperclip className="h-5 w-5" />
             </button>
 
             {isUploadMenuOpen && (
-              <div className="absolute bottom-full left-0 z-30 mb-2 w-72 rounded-2xl border border-[#1f5d63]/15 bg-white p-3 text-left shadow-xl">
+              <div className="absolute bottom-full left-0 z-30 mb-2 w-72 rounded-2xl border border-white/60 bg-white/95 p-3 text-left shadow-2xl backdrop-blur-md">
                 <p className="mb-2 text-xs font-bold uppercase tracking-wide text-[#1f5d63]/70">Upload PDF</p>
                 <input
                   type="file"
@@ -114,7 +117,7 @@ export default function HomeRoute({
             type="button"
             onClick={onAnalyze}
             disabled={isAnalyzing}
-            className="flex h-11 w-11 items-center justify-center rounded-full bg-[#1f5d63] text-white transition hover:bg-[#184b50] disabled:cursor-not-allowed disabled:opacity-60"
+            className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#1f5d63] to-[#2b7f72] text-white shadow-lg transition hover:scale-105 hover:from-[#1b5459] hover:to-[#26695f] disabled:cursor-not-allowed disabled:opacity-60"
             aria-label="Analyze"
           >
             <ArrowUp className="h-5 w-5" />

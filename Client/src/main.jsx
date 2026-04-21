@@ -615,12 +615,18 @@ function FynapseApp() {
   }
 
   return (
-    <div className="relative flex min-h-[100svh] w-full flex-col bg-[#e8eaec] font-sans text-[#1f5d63]">
+    <div className="relative flex min-h-[100svh] w-full flex-col overflow-hidden bg-[#e8eaec] font-sans text-[#1f5d63]">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -top-28 left-1/2 h-[22rem] w-[22rem] -translate-x-1/2 rounded-full bg-teal-200/30 blur-3xl" />
+        <div className="absolute -left-24 bottom-0 h-[18rem] w-[18rem] rounded-full bg-cyan-200/30 blur-3xl" />
+        <div className="absolute -right-20 top-24 h-[17rem] w-[17rem] rounded-full bg-emerald-200/25 blur-3xl" />
+      </div>
+
       <header className="absolute left-0 right-0 top-0 z-20 mx-auto flex w-full max-w-6xl items-center justify-between p-6 md:px-12">
         <FynapseLogo />
-        <nav className="flex gap-6 text-sm font-bold tracking-wide">
-          <button type="button" onClick={() => setView('home')} className="transition hover:text-teal-700">HOME</button>
-          <button type="button" onClick={openDashboard} className="transition hover:text-teal-700">DASHBOARD</button>
+        <nav className="flex gap-2 rounded-full border border-white/60 bg-white/45 p-1 text-sm font-bold tracking-wide shadow-lg shadow-[#1f5d63]/10 backdrop-blur-sm">
+          <button type="button" onClick={() => setView('home')} className="rounded-full px-4 py-1.5 transition hover:bg-white/60 hover:text-teal-700">HOME</button>
+          <button type="button" onClick={openDashboard} className="rounded-full px-4 py-1.5 transition hover:bg-white/60 hover:text-teal-700">DASHBOARD</button>
         </nav>
       </header>
 

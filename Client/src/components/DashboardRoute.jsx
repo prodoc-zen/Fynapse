@@ -79,9 +79,14 @@ export default function DashboardRoute({
   const hasScoredJobs = evaluatedJobs.some((job) => job.score > 0)
 
   return (
-    <section className="flex flex-1 justify-center bg-[#e8eaec] px-3 pb-10 pt-20 md:px-6 md:pt-22">
+    <section className="relative flex flex-1 justify-center overflow-hidden bg-[#e8eaec] px-3 pb-10 pt-20 md:px-6 md:pt-22">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-24 top-24 h-64 w-64 rounded-full bg-teal-200/25 blur-3xl" />
+        <div className="absolute right-0 top-10 h-72 w-72 rounded-full bg-emerald-200/20 blur-3xl" />
+        <div className="absolute bottom-0 left-1/3 h-56 w-56 rounded-full bg-cyan-200/20 blur-3xl" />
+      </div>
       <div className="flex w-full max-w-6xl flex-col gap-4 dashboard-fade-in">
-        <article className="rounded-[2rem] bg-gradient-to-br from-[#1f5d63] via-[#1f5d63] to-[#22756d] p-4 text-white shadow-lg ring-1 ring-white/30 transition duration-300 hover:-translate-y-0.5 hover:shadow-2xl md:p-6">
+        <article className="rounded-[2rem] bg-gradient-to-br from-[#1f5d63] via-[#1f5d63] to-[#22756d] p-4 text-white shadow-[0_24px_55px_rgba(22,84,90,0.28)] ring-1 ring-white/35 transition duration-300 hover:-translate-y-0.5 hover:shadow-2xl md:p-6">
           <div className="grid items-center gap-4 md:grid-cols-[1fr_320px]">
             <div>
               <p className="text-4xl font-black uppercase tracking-wide">{analysisSummary?.applicant_name || 'JOHN DOE'}</p>
@@ -95,7 +100,7 @@ export default function DashboardRoute({
               ) : null}
               <p className="mt-3 text-xs text-white/75">{uploadStatus}</p>
             </div>
-            <div className="grid gap-3 rounded-2xl bg-white/10 p-3">
+            <div className="grid gap-3 rounded-2xl border border-white/15 bg-white/10 p-3 backdrop-blur-sm">
               <div className="flex items-center justify-between gap-3">
                 <p className="text-xs font-black tracking-wide text-white/90">JOB MATCH COLOR MAP</p>
                 <RainbowPieChart jobs={evaluatedJobs.slice(0, 7)} />
@@ -105,7 +110,7 @@ export default function DashboardRoute({
           </div>
         </article>
 
-        <article className="rounded-[2rem] bg-gradient-to-br from-[#1f5d63] via-[#1f5d63] to-[#1d6a74] p-4 text-white shadow-lg ring-1 ring-white/30 transition duration-300 hover:-translate-y-0.5 hover:shadow-2xl md:p-6">
+        <article className="rounded-[2rem] bg-gradient-to-br from-[#1f5d63] via-[#1f5d63] to-[#1d6a74] p-4 text-white shadow-[0_24px_55px_rgba(22,84,90,0.24)] ring-1 ring-white/30 transition duration-300 hover:-translate-y-0.5 hover:shadow-2xl md:p-6">
           <div className="grid gap-4 md:grid-cols-[280px_1fr_1fr]">
             <div className="rounded-3xl bg-gradient-to-b from-[#f6f8f9] to-[#dce8e8] p-4 text-[#1f5d63] transition duration-300 hover:-translate-y-0.5 hover:shadow-xl">
               <p className="text-xs font-black tracking-[0.22em] text-[#1f5d63]/70">MATCH DETAILS</p>
@@ -189,7 +194,7 @@ export default function DashboardRoute({
         </article>
 
         <section className="grid gap-4 md:grid-cols-[1fr_330px]">
-          <article className="rounded-[2rem] border-4 border-[#1f5d63] bg-gradient-to-b from-white to-[#f4fbf8] p-6 shadow-lg transition duration-300 hover:-translate-y-0.5 hover:shadow-2xl">
+          <article className="rounded-[2rem] border-4 border-[#1f5d63] bg-gradient-to-b from-white to-[#f4fbf8] p-6 shadow-[0_22px_48px_rgba(31,93,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:shadow-2xl">
             <p className="text-center text-3xl font-black">JOB DESCRIPTION</p>
             {(summaryLoading && !hasGeneratedSummary) || (skillsLoading && !hasGeneratedSkills) ? (
               <div className="mt-5 space-y-2">
@@ -212,7 +217,7 @@ export default function DashboardRoute({
             ) : null}
           </article>
 
-          <article className="rounded-[2rem] bg-gradient-to-b from-[#1f5d63] to-[#2f7f68] p-4 shadow-lg transition duration-300 hover:-translate-y-0.5 hover:shadow-2xl">
+          <article className="rounded-[2rem] bg-gradient-to-b from-[#1f5d63] to-[#2f7f68] p-4 shadow-[0_22px_48px_rgba(31,93,99,0.2)] transition duration-300 hover:-translate-y-0.5 hover:shadow-2xl">
             <div className="mb-3 rounded-2xl bg-gradient-to-r from-[#eceef0] to-[#dbe9e2] px-4 py-4 text-center text-2xl font-black text-[#1f5d63]">JOB LIST</div>
             {skillsLoading && !hasGeneratedSkills ? (
               <div className="space-y-3">
